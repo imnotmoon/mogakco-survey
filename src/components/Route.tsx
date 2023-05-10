@@ -1,12 +1,16 @@
 import { createBrowserRouter } from 'react-router-dom';
+import { FallbackPage } from './Fallback/FallbackPage';
+import { HomePage } from './Home/HomePage';
+import { ResultPage } from './Result/ResultPage';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>HomePage</div>,
+    element: <HomePage />,
+    errorElement: <FallbackPage />,
   },
   {
     path: '/result',
-    element: <div>ResultPage</div>,
+    element: <ResultPage />,
   },
 ]);
