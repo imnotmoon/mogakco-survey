@@ -1,1 +1,7 @@
-export const HomePage = () => <div>HomePage</div>;
+import { SurveyForm } from '../Survey/SurveyForm';
+
+export const HomePage = () => (
+  <div>
+    <SurveyForm />
+  </div>
+);
